@@ -1488,6 +1488,7 @@ mod tests {
         assert_eq!(count, 4);
     }
 
+    #[cfg(feature = "all_languages")]
     #[test]
     fn test_meilisearch_1714() {
         let index = TempIndex::new();
