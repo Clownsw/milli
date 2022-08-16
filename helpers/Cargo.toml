@@ -9,7 +9,11 @@ publish = false
 [dependencies]
 anyhow = "1.0.56"
 byte-unit = { version = "4.0.14", default-features = false, features = ["std"] }
-milli = { path = "../milli" }
+milli = { path = "../milli", default-features = false }
 mimalloc = { version = "0.1.29", default-features = false }
 stderrlog = "0.5.1"
 structopt = { version = "0.3.26", default-features = false }
+
+[features]
+default = ["all_languages"]
+all_languages = ["milli/default"]
