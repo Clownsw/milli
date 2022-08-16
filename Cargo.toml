@@ -4,12 +4,17 @@ members = ["milli", "filter-parser", "flatten-serde-json", "json-depth-checker",
 default-members = ["milli"]
 
 [profile.dev]
-opt-level = 1
+opt-level = 0 
 
 [profile.release]
 debug = true
 codegen-units = 1
 lto = "thin"
+
+[profile.dev.package.grenad]
+opt-level = 3
+[profile.dev.package.roaring]
+opt-level = 3
 
 [profile.dev.package.lindera-ipadic-builder]
 opt-level = 3
