@@ -20,5 +20,5 @@ stderrlog = "0.5.1"
 structopt = "0.3.26"
 
 [features]
-default = ["all_languages"]
-all_languages = ["milli/default"]
+default = ["all-languages"]
+all-languages = ["milli/default"]

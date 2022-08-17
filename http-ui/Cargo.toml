@@ -46,5 +46,5 @@ maplit = "1.0.2"
 serde_test = "1.0.136"
 
 [features]
-default = ["all_languages"]
-all_languages = ["milli/default"]
+default = ["all-languages"]
+all-languages = ["milli/default"]
