@@ -57,5 +57,5 @@ md5 = "0.7.0"
 rand = "0.8.5"
 
 [features]
-default = ["all_languages"]
-all_languages = ["charabia/default"]
+default = ["all-languages"]
+all-languages = ["charabia/default"]
